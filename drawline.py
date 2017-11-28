@@ -2,6 +2,17 @@ from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
 import numpy as np
 
+'''
+这个类封装了一个方法，供外界调用
+传入一个训练好的模型，传入特征集合，传入标签集合
+会根据每个特征的上下区间产生模拟样本并使用模型进行预测
+然后根据预测结果绘制等高区域图
+
+还会绘制训练集数据
+
+如果原始训练集被拆分为训练集和测试集，可以传入测试集的id集合，将会用灰色标注出来那些测试样本
+'''
+
 def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
     markers = ('s', 'x', 'o', '^', 'v')
     colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
