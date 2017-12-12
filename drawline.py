@@ -10,7 +10,7 @@ import numpy as np
 
 还会绘制训练集数据
 
-如果原始训练集被拆分为训练集和测试集，可以传入测试集的id集合，将会用灰色标注出来那些测试样本
+如果原始训练集被拆分为训练集和测试集，把测试集的元素的id的集合传入，将会用灰色标注出来那些测试样本
 '''
 
 def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):

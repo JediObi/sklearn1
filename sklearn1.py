@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 import numpy as np
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
@@ -5,19 +7,21 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Perceptron
 from drawline import plot_decision_regions
 import matplotlib.pyplot as plt
+import time
 
 '''
 这个类用用于展示调用scikit-learn封装的感知器
-使用直线划分三个种类的iris(去两个特征)
+使用直线划分三个种类的iris(取两个特征)
 '''
 
 iris = datasets.load_iris()
 X = iris.data[:, [2, 3]]
 y = iris.target
 # 把数据及分为训练集(0.7)和测试集(0.3)
-print(y.shape)
+print(time.strftime("%Y-%m-%d",time.localtime(time.time()))+"  "+"y.shape:"+str(y.shape))
+# print("a"+str(1))
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
-print(y_train.shape, y_test.shape)
+print(time.strftime("%Y-%m-%d",time.localtime(time.time()))+"  "+"y.train.shape:"+str(y_train.shape), "  "+"y_test.shape:"+str(y_test.shape))
 a = range(1,3)
 
 # print(X_train.shape, X_test.shape)
