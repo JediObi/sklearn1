@@ -30,7 +30,7 @@ python3 sklearn2_logistic.py
 <br>
 第二，激活函数变成了logistic；
 <br>
-第三,激活函数和logit(p)互为反函数，很好推导；
+第三，激活函数和logit(p)互为反函数，很好推导；
 
 $$\phi(z)=p=\frac{1}{1+e^{-z}}$$
 <br>
