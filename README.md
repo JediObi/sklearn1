@@ -23,7 +23,7 @@ python3 drawline.py
 <div style="background:#333">
 python3 sklearn2_logistic.py
 <hr>
-使用sklearn的logistic regression训练一个模型
+使用sklearn的logistic regression训练一个模型，该模型的损失函数引入了L2正则项以降低过拟合的风险。
 </div>
 
 第一，引入了条件概率，从预测标签变成了预测概率；
